@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Register</title>
+</head>
+<body>
+<a href="/home">Home</a>
+
+
+<div>
+    <form>
+        <h1 class="h3 mb-3">Please register to use!</h1>
+        <div id="register-errors" class="alert alert-danger collapse" role="alert"></div>
+        <label for="inputFirstName">First name</label>
+        <input type="text" id="inputFirstName" name="firstName" class="form-control top" placeholder="First name" required autofocus>
+        <label for="inputLastName" class="sr-only">Last name</label>
+        <input type="text" id="inputLastName" name="lastName" class="form-control middle" placeholder="Last name" required>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" name="email" class="form-control bottom" placeholder="Email address" required>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" name="password" class="form-control top" placeholder="Password" required>
+        <label for="inputConfirmPassword" class="sr-only">Confirm password</label>
+        <input type="password" id="inputConfirmPassword" name="confirmPassword" class="form-control bottom" placeholder="Confirm password" aria-describedby="passwordHelp" required>
+        <small id="passwordHelp" class="form-text text-muted">
+            Your password must be at least 8 characters long, contain letters and numbers, and must not contain spaces or special characters.
+        </small>
+
+        <br>
+        <button class="btn btn-lg btn-primary btn-block" id="submit" type="submit">Register</button>
+        <p class="mt-1">Got an account? <a href="login">Log in here</a>.</p>
+        <p class="mt-4 text-muted">&copy; 2017-2018</p>
+    </form>
+</div>
+
+</body>
+</html>
